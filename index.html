@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div><img class="logo" src="logo.png" alt="Nordic symbol" height="200px">
+        ODIN
+        </div>
+        <!-- <p>Photo by Thomas Griesbeck on <spann href="https://unsplash.com/photos/BS-Uxe8wU5Y">Unsplash</spann></p> -->
+    </div>
+    <div class="content">
+        <div class="one">
+            <p>"Your need for acceptance can make you invisible in this world. <br> Don't let anything stand in the way of the light that shines through this form. <br> Risk being seen in all of your glory because you can fail at what you don't want, so you might as well take a chance on doing what you love." - Jim Carrey</p>
+        </div>
+        <div class="two">
+            <p>Take me there!</p>
+            <form action="get" id="register">
+                <div class="form-row">
+                    <label for="first">FIRST NAME*</label>
+                    <input type="text" name="first" id="first" placeholder="John">
+                </div>
+                <div class="form-row">
+                    <label for="last">LAST NAME*</label>
+                    <input type="text" name="last" id="last" placeholder="Smith">
+                </div>
+                <div class="form-row">
+                    <label for="email">E-MAIL*</label>
+                    <input type="email" name="email" id="email" placeholder="you@example.com">
+                </div>
+                <div class="form-row">
+                    <label for="number">PHONE NUMBER</label>
+                    <input type="number" name="number" id="number" placeholder="xxxx-xxx-xxx">
+                </div>
+                <div class="form-row">
+                    <label for="pass">PASSWORD*</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="confirm">CONFIRM PASSWORD*</label>
+                    <input type="password" name="confirm" id="confirm">
+                </div>
+            </form>
+        </div>
+        <div class="three">
+            <button id="button" form="register">Create Account</button>
+            <br>
+            <span>Already have an account?</span><span>Log in</span>
+        </div>
+    </div>
+</body>
+</html>
