@@ -23,34 +23,34 @@
             <form action="get" id="register">
                 <div class="form-row">
                     <label for="first">FIRST NAME*</label>
-                    <input type="text" name="first" id="first" placeholder="John">
+                    <input type="text" name="first" id="first" placeholder="John" required>
                 </div>
                 <div class="form-row">
                     <label for="last">LAST NAME*</label>
-                    <input type="text" name="last" id="last" placeholder="Smith">
+                    <input type="text" name="last" id="last" placeholder="Smith" required>
                 </div>
                 <div class="form-row">
                     <label for="email">E-MAIL*</label>
-                    <input type="email" name="email" id="email" placeholder="you@example.com">
+                    <input type="email" name="email" id="email" placeholder="you@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <div class="form-row">
                     <label for="number">PHONE NUMBER</label>
-                    <input type="number" name="number" id="number" placeholder="xxxx-xxx-xxx">
+                    <input type="number" name="number" id="number" placeholder="xxxx-xxx-xxx" pattern="d{10}|(\d{4}(\s|-|.)\d{3}(\s|-|.)\d{3})">
                 </div>
                 <div class="form-row">
                     <label for="pass">PASSWORD*</label>
-                    <input type="password" name="pass" id="pass">
+                    <input type="password" name="pass" id="pass" required>
                 </div>
                 <div class="form-row">
                     <label for="confirm">CONFIRM PASSWORD*</label>
-                    <input type="password" name="confirm" id="confirm">
+                    <input type="password" name="confirm" id="confirm" required>
                 </div>
             </form>
         </div>
         <div class="three">
             <button id="button" form="register">Create Account</button>
             <br>
-            <span>Already have an account?</span><span>Log in</span>
+            <span>Already have an account?  </span><span>Log in</span>
         </div>
     </div>
 </body>

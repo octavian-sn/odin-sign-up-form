@@ -81,8 +81,8 @@ label {
 input {
     width: 280px;
     height: 32px;
-    box-shadow: 5px 5px 5px 1px rgb(4, 17, 5);
-    border: solid 1px white;
+    box-shadow: 3px 3px 5px 1px rgb(4, 17, 5);
+    border: solid 2px white;
     font-size: large;
     padding-left: 5px;
 }
@@ -106,6 +106,38 @@ form {
 }
 
 #button {
-    margin-bottom: 10px;
+    appearance: none;
+    border: solid 2px white;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+    box-shadow: 3px 3px 5px 1px rgb(4, 17, 5);
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    color: rgba(9, 44, 28, 0.829);
+}
+
+#button:hover {
+    transition: 0.3s;
+    border: solid 2px rgb(49, 129, 53);
+}
+
+#button:active {
+    transition: 0.1s;
+    background-color: rgba(9, 44, 28, 0.911);
+    color: white;
+    border: 2px solid rgba(9, 44, 28, 0.911);
+}
+
+input:hover {
+    transition: 0.3s;
+    border: solid 2px rgb(49, 129, 53);
+}
+
+input:focus {
+    transition: 0.3s;
+    border: solid 2px rgb(51, 175, 57);
+    outline: none;
 }
 
