@@ -120,6 +120,18 @@ form {
     color: rgba(9, 44, 28, 0.829);
 }
 
+.pass {
+    position: relative;
+}
+
+output {
+    position: absolute;
+    color: rgb(255, 80, 80);
+    bottom: -20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 #button:hover {
     transition: 0.3s;
     border: solid 2px rgb(49, 129, 53);
@@ -141,6 +153,13 @@ input:focus {
     transition: 0.3s;
     border: solid 2px rgb(51, 175, 57);
     outline: none;
+}
+
+input[type='text']:valid,
+input[type='email']:valid,
+input[type='password']:valid {
+    border: solid 2px rgb(51, 175, 57);
+
 }
 
 .credit {
